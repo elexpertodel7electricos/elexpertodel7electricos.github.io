@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #333;
+            color: white;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        form input[type="submit"] {
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+        form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .contact-info div {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 48%;
+        }
+        .address {
+            margin-bottom: 30px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 20px;
+        }
+        .whatsapp-button {
+            background-color: #25D366; /* Color verde de WhatsApp */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+            display: block;
+            text-align: center;
+        }
+        .whatsapp-button:hover {
+            background-color: #1EBE56; /* Color más oscuro al pasar el cursor */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¿Que nesesitas?</h1>
+        <p>Puedes ponerte en contacto con nosotros para cualquier consulta relacionada con tus compras.</p>
+    </header>
+
+    <div class="container">
+        <form action="mail" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Telefono:</label>
+            <input type="number" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Dinos que nesesitas"></textarea>
+
+            <input type="submit" value="Enviar Mensaje">
+        </form>
+
+        <div class="address">
+            <h2>Dirección</h2>
+            <p>Cll 68 25 51</p>
+        </div>
+
+        <div class="contact-info">
+            <div>
+                <h2>Correo Electrónico</h2>
+                <p>elexpertodel7@gmail.com</p>
+            </div>
+            <div>
+                <h2>Teléfono</h2>
+                <p>+57 3105671933</p>
+            </div>
+        </div>
+
+        <a href="https://wa.me/573105671933" class="whatsapp-button">Contactar por WhatsApp</a>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.553745733335!2d-74.07826568573537!3d4.669839643284981!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f99c81f512907%3A0x7e34036a727f479a!2sCl.%2068%20%2325-51%2C%20Bogot%C3%A1%2C%20Barrios%20Unidos%2C%20Colombia!5e0!3m2!1ses!2ses!4v1691794294532!5m2!1ses!2ses" allowfullscreen></iframe>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Tienda de Compras. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
